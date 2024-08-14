@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drop Down</title>
+    <script>
+        function print(){
+
+        }
+    </script>
+</head>
+<body>
+    <input type="text" id = "tid"/>
+    <button id = "bid">click</button></br></br>
+    <select id="choco">
+        <option value="select">Select options</option>
+        <option value="Dairy milk">Dairy Milk</option>
+        <option value="Kitkat">Kitkat</option>
+        <option value="Munch">Munch</option>
+        <option value="Five star">Five Star</option>
+    </select>
+</body>
+<script>
+    document.getElementById("bid").addEventListener('click',()=>{
+        let val = document.getElementById("tid").value;
+        console.log(val);
+    })
+    // use this code or the below one 
+    //document.getElementById("fruits").addEventListener('change',()=>{
+       // let val1 = document.getElementById("fruits").value;
+        //console.log(val1)
+    //})
+    //access value and handle event 
+    document.getElementById("choco").addEventListener('change',(e)=>{
+                console.log(e.target.value);
+    })
+</script>
+</html>

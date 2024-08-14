@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>   
+</head>
+<body>
+    <input type = "text" id = "input_id"/>
+    <h1 id="h1_id">  An heading line  </h1>
+    <h2 id="h2_id"> for an h2 using button click</h2>
+    <button onclick="changeText()">click here</button>
+</body> 
+<script>
+        
+        function changeText(){
+            let val = document.getElementById("input_id").value;
+            document.getElementById("h1_id").innerHTML="this is form js";
+            document.getElementById("h2_id").innerHTML="change on click";
+            console.log(val);
+            if (val==""){
+                console.log("text box is empty");
+            }
+        }
+</script>
+</html>

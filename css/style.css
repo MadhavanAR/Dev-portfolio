@@ -1,0 +1,49 @@
+.div1 h1{
+    background-color: aquamarine;
+    }
+.div2 h2{
+    color: chocolate;
+}
+h2{
+    color: blue;
+}
+.s1 h2{
+    color: brown;
+}
+.s2 h2{
+    color: cadetblue;
+}
+.menu{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+.menu li{
+    margin: 5px;
+}
+.active{
+    color: red;
+}
+.foot{
+    text-align: center;
+}
+.content{
+    display: flex;
+    flex-direction: row;
+}
+.content div{
+    height: 25vh;
+    width: 25%;
+    border: 1px solid #000;
+}
+img{
+    width: 100%;
+    height: 25vh;
+}
+a:hover{
+    color:red;
+    text-decoration: underline;
+}
+a{
+    text-decoration: none;
+}

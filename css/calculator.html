@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    Number1:
+    <input type="text" id="no1">
+    Number2:
+    <input type="text" id="no2">
+    <button onclick="calc()">click</button>
+</body>
+<script>
+    function calc(){
+        no1=parseInt(document.getElementById('no1').value);
+        no2=parseInt(document.getElementById('no2').value);
+        console.log("Addition:",no1+no2);
+        console.log("Subtraction",no1-no2);
+        console.log("Multiplication",no1*no2);
+        console.log("Division",no1/no2);
+    }
+</script>
+</html>

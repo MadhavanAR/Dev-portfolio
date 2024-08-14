@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fetch</title>
+</head>
+<body>
+
+<button onclick="getapi()">Getapi</button>
+    
+</body>
+<script>
+    async function getapi (){
+    //public  url is given
+    let res=await fetch ("https://reqres.in/api/users",{"method": "POST"});
+    let json= await res.json();
+    console.log(json);
+    console.log(res);
+    }
+   // document.getElementById('but').addEventListener('click',getapi);
+        </script>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .red {
+            color: red;
+        }
+        .blue {
+            color: blue;
+        }
+        .redBorder {
+            border: 2px solid red;
+        }
+        .blueBorder {
+            border: 2px solid blue;
+        }
+        #tb1{
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="h1_id">this is h1</h1>
+    <button id="red_id">RED</button>
+    <button id="blue_id">BLUE</button><br><br>
+    <input type="text" id="tb1"/>
+    <button id="click">CLICK</button>
+    <script>
+        chgRed =()=>{
+            h1 = document.querySelector("#h1_id");
+            h1.classList.remove('blue');
+            h1.classList.add('red');
+        }
+        chgBlue=()=>{
+            h1 = document.querySelector("#h1_id");
+            h1.classList.remove('red');
+            h1.classList.add('blue');
+        }
+        chgRed1 =()=>{
+            let val = document.getElementById("tb1").value;
+            if (val == ""){
+                tb1 = document.querySelector("#tb1");
+                tb1.classList.add('redBorder');
+                tb1.classList.remove('blueBorder');
+            }
+            else{
+                tb1.classList.remove('redBorder');
+                tb1.classList.add('blueBorder');
+            }
+            
+        }
+        document.querySelector("#red_id").addEventListener("click",chgRed);
+        document.querySelector("#blue_id").addEventListener("click",chgBlue);
+        document.querySelector("#click").addEventListener("click", chgRed1)
+    </script>
+</body>
+</html>

@@ -1,0 +1,232 @@
+/* General Reset and Body Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #000; /* Full black background */
+    color: white;
+    line-height: 1.6;
+}
+
+/* Capsule-like navigation bar with shadow and border animation */
+.capsule-nav {
+    width: 70%;
+    margin: 20px auto;
+    background-color: rgba(255, 255, 255, 0.1); /* Transparent background */
+    border-radius: 50px;
+    border: 2px solid rgba(251, 251, 251, 0.2); /* Light border */
+    padding: 30px;
+    position: relative; /* To position the animated line */
+    box-shadow: 10px 15px 10px rgba(13, 143, 146, 0.3); /* Adding shadow */
+}
+
+/* Creating the animated line around the border */
+.capsule-nav::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    border: 2px solid rgb(18, 123, 144); /* The animated border line */
+    box-sizing: border-box;
+    animation: rotate-border 5s linear infinite; /* Animation with 5s speed */
+}
+
+/* Navigation Links Styling */
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 250px;
+    padding-right: 250px;
+}
+
+.nav-links li {
+    position: relative;
+}
+
+.nav-links a {
+    color: grey;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 20px 0;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: white;
+}
+
+.nav-links a:hover::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+}
+
+
+.political-analyst {
+    position: absolute;
+    top: 150px;
+    left: 5%;
+    right: 50px;
+    padding-left: 30px;
+    width: auto;
+    color: #000000;
+    text-shadow: 0px 0px 2px #00bba5;
+}
+
+.political-analyst span {
+    color: #000000;
+    text-shadow: 0px 0px 2px #00bba5;
+    font-size: 7rem;
+    margin-right: -14px;
+    animation: glow 4.5s ease-in-out infinite;
+}
+
+.political-analyst span:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.political-analyst span:nth-child(2) {
+    animation-delay: 0.25s;
+}
+
+.political-analyst span:nth-child(3) {
+    animation-delay: 0.5s;
+}
+
+.political-analyst span:nth-child(4) {
+    animation-delay: 0.75s;
+    padding-right: 50px;
+}
+
+.political-analyst span:nth-child(5) {
+    animation-delay: 1s;
+}
+
+.political-analyst span:nth-child(6) {
+    animation-delay: 1.25s;
+}
+
+.political-analyst span:nth-child(7) {
+    animation-delay: 1.5s;
+}
+
+.political-analyst span:nth-child(8) {
+    animation-delay: 1.75s;
+}
+
+.political-analyst span:nth-child(9) {
+    animation-delay: 2s;
+    padding-right: 50px;
+}
+
+.political-analyst span:nth-child(10) {
+    animation-delay: 2.25s;
+   
+}
+
+.political-analyst span:nth-child(11) {
+    animation-delay: 2.5s;
+}
+
+.political-analyst span:nth-child(12) {
+    animation-delay: 2.75s;
+}
+
+.political-analyst span:nth-child(13) {
+    animation-delay: 3s;
+}
+
+.political-analyst span:nth-child(14) {
+    animation-delay: 3.25s;
+}
+
+.political-analyst span:nth-child(15) {
+    animation-delay: 3.5s;
+}
+
+.political-analyst span:nth-child(16) {
+    animation-delay: 3.75s;
+}
+.political-analyst span:nth-child(17) {
+    animation-delay: 4s;
+}
+.political-analyst span:nth-child(18) {
+    animation-delay: 4.25s;
+}
+
+@keyframes glow {
+    0%,
+    100% {
+        color: #075b51;
+        filter: blur(2px);
+        text-shadow: 0px 0px 10px #00bba5, 0px 0px 20px #00bba5, 0px 0px 40px #00bba5;
+    }
+    5%,
+    95% {
+        color: #000000;
+        filter: blur(0px);
+        text-shadow: 0px 0px 2px #00bba5;
+    }
+}
+.main-section__niranjan-img-black {
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    z-index: 100;
+    filter: grayscale(180%);
+    display: flex;
+    align-items: center;
+}
+.content-wrapper {
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: flex-end; /* Align items to the bottom */
+    padding: 5px;
+    height: 85vh; /* Full viewport height to center vertically */
+    margin: 0 auto; /* Center the wrapper */
+    max-width: 550px
+}
+.text-content {
+    position: absolute; /* Absolutely positioned */
+    top: 60%; /* Adjust the top value to position it under the "MERN" text */
+    left: 175px; /* Align to the left of the page */
+    color: white;
+    text-align: left;
+    z-index: 50;
+}
+
+.niru1 {
+    color: #ffffff; /* White color for the text initially */
+    font-size: 3.9rem;
+    font-weight: 800;
+    cursor: pointer; /* Makes the text look clickable */
+    transition: color 0.3s ease;
+}
+.niru {
+    color: #ffffff; /* White color for the text initially */
+    font-size: 1rem;
+    font-weight: 800;
+    cursor: pointer; /* Makes the text look clickable */
+    transition: color 0.3s ease;
+}
+/* Hover effect on text - changes both text color and image */
+.niru1:hover {
+    color: #00bba5; /* Changes the text color to green */
+}
+.niru:hover {
+    color: #00bba5; /* Changes the text color to green */
+}

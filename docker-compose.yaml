@@ -1,0 +1,14 @@
+version: "3.8"
+
+services:
+  web:
+    build: .
+    env_file:
+      - ./.env
+    container_name: app
+    command: npm run dev
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/usr/src:rw
+    restart: always
